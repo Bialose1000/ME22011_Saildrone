@@ -37,7 +37,7 @@ def sail_drone_dynamics(t, S):
     F_H_x, F_H_y = F_H
 
     v_A = v_W - v_D
-    v_a = np.linalg.norm(v_A)
+    v_a = np.linalg.norm(v_A) # Sum of the squared elements to find magnitude
 
     F_A_x = F_A_y = tau_A = 0.0
 
